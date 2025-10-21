@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+	
+
+    <style>
+            #p{
+                text-align: center ;
+            }
+            
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="caixa">
+        <h1><img src="img/logo.png"></h1>
+        
+        <nav>       
+        <ul> 
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="Contato.html">Contato</a></li> 
+        </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <form class="formulario">
+
+            <label for="nomesobrenome"> Nome Completo </label>
+            <input type="text" id="nomesobrenome" class="class-input" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="class-input" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="class-input"required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="65" rows="10" id="mensagem" class="class-input"></textarea>
+
+            <input type="submit" value="Enviar" class="enviar">
+
+            <div>
+                <p>Como prefere o nosso contato?</p>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                
+                <label for="radio-whatzapp"><input type="radio" name="contato" value="Whatzapp" id="radio-whatzapp" checked>Whatzapp</label>
+                
+            </div>
+            <div>
+                <p>Qual horário prefere ser atendido?</p>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </div>
+
+
+             <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+             <input type="submit" value="Enviar" class="enviar">
+
+            
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th> 
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Terça</td>
+                    <td>12h ~ 19h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>9h ~ 19h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>9h ~ 19h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    
+    <footer>
+        <img src="img/logo-branco.png">  
+        <p class="copyright">&copy;2025 ket  </p>
+    </footer>
